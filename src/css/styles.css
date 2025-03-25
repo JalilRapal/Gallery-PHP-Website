@@ -1,0 +1,122 @@
+:root {
+    --text-color: #000;
+    --link-color: #0000EE;
+    --nav-background-color: #333;
+    --nav-text-color: #FFF;
+    --button-background-color: #333;
+    --button-text-color: #FFF;
+    --container-background-color: #FFF;
+    --container-text-color: #000;
+    --header-font-size: 2em;
+    --paragraph-font-size: 1em;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    color: var(--text-color);
+}
+
+nav {
+    background-color: var(--nav-background-color);
+    color: var(--nav-text-color);
+    padding: 15px;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    color: var(--nav-text-color);
+    text-decoration: none;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+    background-color: var(--container-background-color);
+    color: var(--container-text-color);
+}
+
+form {
+    background: #f4f4f4;
+    padding: 20px;
+    border-radius: 5px;
+}
+
+form input[type="text"],
+form input[type="file"],
+form select,
+form textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+form input[type="submit"] {
+    background: var(--button-background-color);
+    color: var(--button-text-color);
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+}
+
+form input[type="submit"]:hover {
+    background: #555;
+}
+
+.gallery-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.gallery-container ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.gallery-container li {
+    margin: 10px;
+    border: 1px solid #ccc;
+    padding: 10px;
+    border-radius: 5px;
+    width: calc(33% - 20px);
+    box-sizing: border-box;
+    cursor: pointer;
+}
+
+.gallery-container img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+.gallery-container p {
+    text-align: center;
+}
+
+h1 {
+    font-size: var(--header-font-size);
+}
+
+p {
+    font-size: var(--paragraph-font-size);
+}
